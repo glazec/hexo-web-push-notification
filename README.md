@@ -1,7 +1,7 @@
 # hexo-web-push-notification
 An hexo plugin help you notify readers new post update.
 ## Requirement
-This plugin relies on [webPush](https://www.webpushr.com/), which is a **free** web push notification service. Thus to use this plugin, make sure your site support webpusr. Here is the [教程](https://www.inevitable.tech/posts/98ae9e55/).
+This plugin relies on [webPush](https://www.webpushr.com/), which is a **free** web push notification service. Thus make sure your site support webpusr. Here is the [教程](https://www.inevitable.tech/posts/98ae9e55/).
 ## Install
 ## Usage
 Add the configuration to `_config.yml` in hexo root dir.
@@ -12,7 +12,7 @@ webPushNotification:
     webpushrAuthToken: 'your webpushr authorize token'
 ```
 ## How it works
-The plugin generate `newPost.json` during `hexo generate`. The `newPost.json` contains the information of latest post. It looks like this:
+The plugin generates `newPost.json` during `hexo generate`. The `newPost.json` contains the information of latest post. It looks like this:
 ```json
 {
 "title":"静态博客优化",
@@ -25,7 +25,7 @@ The plugin generate `newPost.json` during `hexo generate`. The `newPost.json` co
 }
 ```
 
-When you call `hexo deploy`, the plugin will compare the `newPost.json` from your online site and from your local. If the id value is different, the plugin will trigger the notification from [webPush](https://www.webpushr.com/).
+When you call `hexo deploy`, the plugin will compare the `newPost.json` from your online site and from your local machine. If the id values are different, the plugin will trigger the push notification from [webPush](https://www.webpushr.com/).
 
 ## Future work
 Maybe support more web push notification services.
