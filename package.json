@@ -1,16 +1,17 @@
 {
   "name": "hexo-web-push-notification",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "An hexo plugin help you notify readers new post update.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "glaze",
   "license": "ISC",
   "dependencies": {
     "hexo-fs": "^2.0.0",
     "hexo-util": "^1.8.1",
     "parser-front-matter": "^1.6.4"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
