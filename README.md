@@ -23,7 +23,7 @@ The plugin generate `newPost.json` during `hexo generate`. The `newPost.json` co
 "tags":["博客优化","性能","Hexo"],
 "categories":["开发"]
 }
-```.
+```
 
 When you call `hexo deploy`, the plugin will compare the `newPost.json` from your online site and from your local. If the id value is different, the plugin will trigger the notification from [webPush](https://www.webpushr.com/).
 
