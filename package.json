@@ -1,0 +1,16 @@
+{
+  "name": "hexo-web-push-notification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hexo-fs": "^2.0.0",
+    "hexo-util": "^1.8.1",
+    "parser-front-matter": "^1.6.4"
+  }
+}
