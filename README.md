@@ -28,8 +28,8 @@ The plugin generate `newPost.json` during `hexo generate`. The `newPost.json` co
 When you call `hexo deploy`, the plugin will compare the `newPost.json` from your online site and from your local. If the id value is different, the plugin will trigger the notification from [webPush](https://www.webpushr.com/).
 
 ## Future work
-Maybe support more web push notification service.
+Maybe support more web push notification services.
 
-Maybe open try to help integrate the web push notification service into different themes.
+Maybe try to help integrate web push notification services into different themes.
 
-The roadmap need your feedbacks. Feel free to open the issue.
+The roadmap needs your feedbacks. Feel free to open the issue.
