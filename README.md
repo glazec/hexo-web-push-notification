@@ -10,7 +10,7 @@ This plugin relies on [webPush](https://www.webpushr.com/), which is a **free** 
 
 ## Install
 ```js
-npm i hexo-web-push-notification
+npm i hexo-web-push-notification --save
 ```
 
 ## Usage
