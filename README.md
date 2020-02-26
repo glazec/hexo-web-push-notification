@@ -9,6 +9,9 @@ A hexo plugin help you notify readers new post update.
 This plugin relies on [webPush](https://www.webpushr.com/), which is a **free** web push notification service. Thus make sure your site support webpusr. Here is the [教程](https://www.inevitable.tech/posts/98ae9e55/).
 
 ## Install
+```js
+npm i hexo-web-push-notification
+```
 
 ## Usage
 
