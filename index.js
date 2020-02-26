@@ -17,7 +17,7 @@ hexo.on('generateAfter', async function (post) {
         'title': newPost.title,
         'id': newPost.path,
         'date_published': newPost.date.format('L'),
-        'summary': newPost.excerpt,
+        'summary': util.stripHTML(newPost.excerpt),
         'url': newPost.permalink,
         'tags': newPost.tags.data.map(function (v) { return v.name }),
         'categories': newPost.categories.data.map(function (v) { return v.name })
