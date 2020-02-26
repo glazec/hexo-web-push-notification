@@ -1,5 +1,7 @@
 # hexo-web-push-notification
 
+![downloads](https://img.shields.io/npm/dt/hexo-web-push-notification)
+
 An hexo plugin help you notify readers new post update.
 
 ## Requirement
