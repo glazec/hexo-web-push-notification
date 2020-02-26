@@ -4,8 +4,6 @@
 
 const util = require('hexo-util');
 const fs = require('hexo-fs');
-const parser = require('parser-front-matter');
-const path = require('path')
 const fetch = require("node-fetch");
 const url = require("url")
 
