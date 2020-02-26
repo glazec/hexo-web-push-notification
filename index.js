@@ -25,9 +25,9 @@ hexo.on('generateAfter', async function (post) {
     fs.writeFile('public/newPost.json', JSON.stringify(JSONFeed), function (err, data) { hexo.log.info("Generated: newPost.json") })
 })
 
-//triggered after hexo deploy.
+//triggered before hexo deploy.
 //it compare the newPost.json from your site and local to decide whether push the notification.
-hexo.on("deployAfter", async function (post) {
+hexo.on("deployBefore", async function (post) {
     // Get newPost.json from your site.
     var newPostOnlineSite = await fetch(url.resolve(hexo.config.url, "newPost.json"));
     var newPostOnlineSite = await newPostOnlineSite.json();
