@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "hexo-fs": "^2.0.0",
-    "hexo-util": "^1.8.1"
+    "hexo-util": "^1.8.1",
+    "node-fetch": "^2.6.0"
   },
   "repository": "git://github.com/glazec/hexo-web-push-notification"
 }
