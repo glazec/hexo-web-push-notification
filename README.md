@@ -9,6 +9,7 @@ A hexo plugin help you automatically notify readers new post update.
 This plugin relies on [webPush](https://www.webpushr.com/), which is a **free** web push notification service. Thus make sure your site support webpusr. Here is the [教程](https://www.inevitable.tech/posts/98ae9e55/).
 
 ## Install
+
 ```js
 npm i hexo-web-push-notification --save
 ```
@@ -22,6 +23,8 @@ webPushNotification:
   webpushrKey: "your webpushr rest api key"
   webpushrAuthToken: "your webpushr authorize token"
 ```
+
+**notice**: The ask-for-notification prompt will not appear locally. This means you will not see any ask-for-notification prompt when running `hexo server`
 
 ## How it works
 
