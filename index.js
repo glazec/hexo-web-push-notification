@@ -72,3 +72,17 @@ hexo.on("deployBefore", async function (post) {
         hexo.log.info("No New Post detected.");
     }
 })
+
+//insert webpushr tracking code
+hexo.extend.filter.register('after_render:html', data => {
+    var payload = `(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','${hexo.config.webPushNotification.trackingCode}');`
+
+    // return data.replace(/<body>(?!<\/body>).+?<\/body>/s, str => str.replace('</body>', "<script>"+decodeURI(payload)+"</script></body>"));
+    return data.replace(/<body.+?>(?!<\/body>).+?<\/body>/s, str => str.replace('</body>', "<script>" + decodeURI(payload) + "</script></body>"));
+
+});
+
+//insert webpushr-sw.js to web root dir
+hexo.on('generateAfter', async function (post) {
+    fs.writeFile('public/webpushr-sw.js', "importScripts('https://cdn.webpushr.com/sw-server.min.js');", function (err, data) { hexo.log.info("Generated: webpushr-sw.js") })
+})
