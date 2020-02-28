@@ -68,4 +68,4 @@ When you call `hexo deploy`, the plugin will compare the `newPost.json` from you
 
 - [x] Maybe try to help integrate web push notification services into different themes.
 
-- [ ] The roadmap needs your feedbacks. Feel free to open the issue.
+The roadmap needs your feedbacks. Feel free to open the issue.
