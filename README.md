@@ -64,8 +64,8 @@ When you call `hexo deploy`, the plugin will compare the `newPost.json` from you
 
 ## Future work
 
-- [] Maybe support more web push notification services.
+- [ ] Maybe support more web push notification services.
 
-- [ x ] Maybe try to help integrate web push notification services into different themes.
+- [x] Maybe try to help integrate web push notification services into different themes.
 
 - [ ] The roadmap needs your feedbacks. Feel free to open the issue.
