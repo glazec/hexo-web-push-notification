@@ -2,7 +2,7 @@
 
 ![downloads](https://img.shields.io/npm/dt/hexo-web-push-notification)
 
-A hexo plugin helps you automatically notify readers new post update. Subscribed readers can receive notification about your latest post. The notification will contain title and excerpt. Clicking it will bring readers to your latest post.
+A hexo plugin helps you **automatically** notify readers new post update **everytime** you deploy new post. Subscribed readers can receive notification about your latest post. The notification will contain title and excerpt. Clicking it will bring readers to your latest post.
 
 [开发经历](https://www.inevitable.tech/posts/a1b574bb/)
 
