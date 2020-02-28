@@ -4,6 +4,10 @@
 
 A hexo plugin helps you automatically notify readers new post update. Subscribed readers can receive notification about your latest post. The notification will contain title and excerpt. Clicking it will bring readers to your latest post.
 
+[Example site](https://www.inevitable.tech)
+
+Reminder: If you choose not to receive the notification, the prompt will not shown until 15 days later.
+
 ## Requirement
 
 This plugin relies on [webPushr](https://www.webpushr.com/), which is a **free** web push notification service. Thus make sure you have already registered and add your site into the webpushr. If you want notifications to work for Safari, remember to set up the Safari Certificate. Here is the [教程](https://www.inevitable.tech/posts/98ae9e55/). Do not worry about integrating webpushr into your site. This plugin will make this happen for you.
