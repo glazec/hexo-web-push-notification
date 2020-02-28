@@ -1,11 +1,12 @@
 {
   "name": "hexo-web-push-notification",
   "version": "0.2.2",
-  "description": "An hexo plugin help you notify readers new post update.",
+  "description": "A hexo plugin helps you notify readers new post update.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": ["hexo","hexo-plugin","web-push-notification","web-push","notification"],
   "author": "glaze",
   "license": "ISC",
   "dependencies": {
@@ -13,5 +14,10 @@
     "hexo-util": "^1.8.1",
     "node-fetch": "^2.6.0"
   },
-  "repository": "git://github.com/glazec/hexo-web-push-notification"
+  "url":"https://www.inevitable.tech",
+  "email": "i@inevitable.tech",
+  "repository": "git://github.com/glazec/hexo-web-push-notification",
+  "bugs": {
+    "url":"https://github.com/glazec/hexo-web-push-notification/issues",
+    "email": "i@inevitable.tech"}
 }
