@@ -2,11 +2,11 @@
 
 ![downloads](https://img.shields.io/npm/dt/hexo-web-push-notification)
 
-A hexo plugin help you automatically notify readers new post update. Subscribed readers can receive notification about your latest post. The notificaiton will contain title and excerpt. Clicking it will bring readers to your latest post.
+A hexo plugin helps you automatically notify readers new post update. Subscribed readers can receive notification about your latest post. The notification will contain title and excerpt. Clicking it will bring readers to your latest post.
 
 ## Requirement
 
-This plugin relies on [webPushr](https://www.webpushr.com/), which is a **free** web push notification service. Thus make sure you have already registered and add your site into the webpushr. If you want notifications work for Safari, remember to set up the Safari Certificate. Here is the [教程](https://www.inevitable.tech/posts/98ae9e55/). Do not worry about integrating webpushr into your site. This plugin will make this happen for you.
+This plugin relies on [webPushr](https://www.webpushr.com/), which is a **free** web push notification service. Thus make sure you have already registered and add your site into the webpushr. If you want notifications to work for Safari, remember to set up the Safari Certificate. Here is the [教程](https://www.inevitable.tech/posts/98ae9e55/). Do not worry about integrating webpushr into your site. This plugin will make this happen for you.
 
 ## Install
 
@@ -35,7 +35,7 @@ webpushr('init','AEGlpbdgvBCWXqXI6PtsUzobY7TLV9gwJU8bzMktrwfrSERg_xnLVbjpCw8x2Gm
 <!-- end webpushr tracking code -->
 ```
 
-Put `AEGlpbdgvBCWXqXI6PtsUzobY7TLV9gwJU8bzMktrwfrSERg_xnLVbjpCw8x2GmFmi1ZcLTz0ni6OnX5MAwoM88` in the last line is your `trackingCode`.
+`AEGlpbdgvBCWXqXI6PtsUzobY7TLV9gwJU8bzMktrwfrSERg_xnLVbjpCw8x2GmFmi1ZcLTz0ni6OnX5MAwoM88` in the last line is your `trackingCode`.
 
 The webpushrKey and webpushrAuthToken can be found in Integration>REST API Keys.
 
