@@ -67,13 +67,31 @@ The plugin generates `newPost.json` during `hexo generate`. The `newPost.json` c
   "categories": ["开发"]
 }
 ```
+The summary part is from the excerpt of your post. Plase ensure that your post have **excerpt**.
+```
+---
+title: Hexo使用Web Push Notification 浏览器通知推送
+tags:
+  - hexo
+  - 服务器推送技术
+  - push notifications
+categories:
+  - 开发
+comments: true
+abbrlink: 98ae9e55
+date: 2020-02-26 10:00:00
+---
+
+Web Push Notification 是怎么工作的？个人博客为什么要使用它？如何使用它？
+
+<!-- more -->
+```
+The content between `---` and `<!-- more -->` is excerpt.
 
 When you call `hexo deploy`, the plugin will compare the `newPost.json` from your online site and from your local machine. If the id values are different, the plugin will trigger the push notification from [webPush](https://www.webpushr.com/).
 
 ## Future work
 
 - [ ] Maybe support more web push notification services.
-
-- [x] Maybe try to help integrate web push notification services into different themes.
 
 The roadmap needs your feedbacks. Feel free to open the issue.
