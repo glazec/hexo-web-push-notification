@@ -19,6 +19,8 @@ hexo.on('generateAfter', async function (post) {
         'date_published': newPost.date.format('L'),
         'summary': util.stripHTML(newPost.excerpt),
         'url': newPost.permalink,
+        'icon': util.full_url_for('/assets/images/favicon.ico'),
+        'badge': util.full_url_for('/assets/images/favicon.ico'),
         'tags': newPost.tags.data.map(function (v) { return v.name }),
         'categories': newPost.categories.data.map(function (v) { return v.name })
     }
