@@ -6,18 +6,27 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["hexo","hexo-plugin","web-push-notification","web-push","notification"],
+  "keywords": [
+    "hexo",
+    "hexo-plugin",
+    "web-push-notification",
+    "web-push",
+    "notification"
+  ],
   "author": "glaze",
   "license": "ISC",
   "dependencies": {
     "hexo-fs": "^2.0.0",
     "hexo-util": "^1.8.1",
-    "node-fetch": "^2.6.0"
+    "moment": "^2.26.0",
+    "node-fetch": "^2.6.0",
+    "request": "^2.88.2"
   },
-  "url":"https://www.inevitable.tech",
+  "url": "https://www.inevitable.tech",
   "email": "i@inevitable.tech",
   "repository": "git://github.com/glazec/hexo-web-push-notification",
   "bugs": {
-    "url":"https://github.com/glazec/hexo-web-push-notification/issues",
-    "email": "i@inevitable.tech"}
+    "url": "https://github.com/glazec/hexo-web-push-notification/issues",
+    "email": "i@inevitable.tech"
+  }
 }
