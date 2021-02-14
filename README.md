@@ -48,6 +48,7 @@ webpushr('init','AEGlpbdgvBCWXqXI6PtsUzobY7TLV9gwJU8bzMktrwfrSERg_xnLVbjpCw8x2Gm
 The webpushrKey and webpushrAuthToken can be found in Integration>REST API Keys.
 
 **notice**: The ask-for-notification prompt will not appear locally. This means you will not see any ask-for-notification prompt when running `hexo server`
+**update**: To reduce lighthouse report impact, no ask-for-notification prompt until scrolling the page.
 
 ## Customize
 You can customize how your ask-for-notification prompt look like in Setup>EditCustom Prompts.
