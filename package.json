@@ -1,6 +1,6 @@
 {
   "name": "hexo-web-push-notification",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "A hexo plugin helps you notify readers new post update.",
   "main": "index.js",
   "scripts": {
