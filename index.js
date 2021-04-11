@@ -69,7 +69,7 @@ hexo.on("deployAfter", async function (post) {
             if (!error && response.statusCode == 200) {
                 hexo.log.info("Successfully send notifications");
                 hexo.log.info(body);
-                
+
             }
             else {
                 hexo.log.error("Fail to send notifications");
@@ -106,7 +106,8 @@ hexo.on("deployAfter", async function (post) {
 
 //insert webpushr tracking code
 hexo.extend.filter.register('after_render:html', data => {
-    var payload = `window.addEventListener('scroll', function() {if (window.pageYOffset>100 &&window.pageYOffset<300){(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','${hexo.config.webPushNotification.trackingCode}');}});`
+    var payload = `(function (w, d, s, id) {
+            if (typeof (w.webpushr) !== 'undefined') return; w.webpushr = w.webpushr || function () { (w.webpushr.q = w.webpushr.q || []).push(arguments) }; var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.id = id; js.async = 1; js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window, document, 'script', 'webpushr-jssdk'));webpushr('setup', { 'key': '${hexo.config.webPushNotification.trackingCode}' });`
 
     // return data.replace(/<body>(?!<\/body>).+?<\/body>/s, str => str.replace('</body>', "<script>"+decodeURI(payload)+"</script></body>"));
     return data.replace(/<body.+?>(?!<\/body>).+?<\/body>/s, str => str.replace('</body>', "<script>" + decodeURI(payload) + "</script></body>"));
